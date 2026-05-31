@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bigspring with HTML, CSS, JavaScript and Font Awesome"
+    />
+    <title>Bigspring with HTML and CSS</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link rel="preload" as="image" href="img/banner.svg" fetchpriority="high" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700&family=Poppins:wght@400;500&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700&family=Poppins:wght@400;500&display=swap"
+      />
+    </noscript>
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      />
+    </noscript>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Bigspring home">
+          <img
+            src="img/logo.png"
+            width="360"
+            height="77"
+            alt="Bigspring"
+            decoding="async"
+          />
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="primary-menu"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="nav-panel" id="primary-menu">
+          <ul class="nav-menu">
+            <li>
+              <a class="nav-link active" href="#home" aria-current="page">Home</a>
+            </li>
+            <li class="dropdown">
+              <button
+                class="nav-link dropdown-toggle"
+                type="button"
+                aria-controls="company-menu"
+                aria-expanded="false"
+              >
+                Company <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu" id="company-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#workflow">How It Works</a></li>
+                <li><a href="#career">Career</a></li>
+              </ul>
+            </li>
+            <li class="dropdown products-dropdown">
+              <button
+                class="nav-link dropdown-toggle"
+                type="button"
+                aria-controls="products-menu"
+                aria-expanded="false"
+              >
+                Products <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu wide-menu" id="products-menu">
+                <li>
+                  <a href="#products">
+                    <i class="fa-solid fa-users"></i>
+                    <span>
+                      <strong>CRM</strong>
+                      <small>For great customer relationships</small>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#products">
+                    <i class="fa-solid fa-cube"></i>
+                    <span>
+                      <strong>Help Desk</strong>
+                      <small>Software to deliver great customer support</small>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#products">
+                    <i class="fa-solid fa-house-laptop"></i>
+                    <span>
+                      <strong>Workplace</strong>
+                      <small>Application built to improve productivity</small>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#products">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>
+                      <strong>Analytics</strong>
+                      <small>Create custom reports from any data set.</small>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#products">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <span><strong>View All Product</strong></span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <button
+                class="nav-link dropdown-toggle"
+                type="button"
+                aria-controls="blog-menu"
+                aria-expanded="false"
+              >
+                Blog <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu" id="blog-menu">
+                <li><a href="#blog">Blog Post</a></li>
+                <li><a href="#authors">Author</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <button
+                class="nav-link dropdown-toggle"
+                type="button"
+                aria-controls="pages-menu"
+                aria-expanded="false"
+              >
+                Pages <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu" id="pages-menu">
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms &amp; Condition</a></li>
+                <li><a href="#not-found">404</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <a class="btn btn-sm btn-primary" href="#contact">Get Demo</a>
+            <button class="theme-toggle" type="button" aria-label="Toggle theme">
+              <i class="fa-regular fa-sun"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">We make big plans happen.</span>
+            <h1>Let us solve your critical website development challenges</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              nihil enim maxime corporis cumque totam aliquid nam sint inventore
+              optio modi neque laborum officiis necessitatibus.
+            </p>
+            <a class="btn btn-primary" href="#contact">Contact Us</a>
+          </div>
+          <div class="hero-art">
+            <img
+              src="img/banner.svg"
+              width="1534"
+              height="807"
+              alt="banner-image"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="brands section-sm">
+        <div class="container">
+          <div class="section-head">
+            <h2>Let us solve your critical website development challenges</h2>
+          </div>
+          <div class="brand-marquee" aria-label="Trusted brands">
+            <div class="brand-track">
+              <img src="img/brands/microsoft.webp" width="161" height="35" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+              <img src="img/brands/hubspot.webp" width="119" height="35" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+              <img src="img/brands/toshiba.webp" width="163" height="35" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+              <img src="img/brands/aribnb.webp" width="113" height="35" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+              <img src="img/brands/facebook.webp" width="169" height="35" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+              <img src="img/brands/tinder.webp" width="98" height="35" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+              <img src="img/brands/microsoft.webp" width="161" height="35" loading="lazy" decoding="async" alt="Microsoft" />
+              <img src="img/brands/hubspot.webp" width="119" height="35" loading="lazy" decoding="async" alt="Hubspot" />
+              <img src="img/brands/toshiba.webp" width="163" height="35" loading="lazy" decoding="async" alt="TOSHIBA" />
+              <img src="img/brands/aribnb.webp" width="113" height="35" loading="lazy" decoding="async" alt="aribnb" />
+              <img src="img/brands/facebook.webp" width="169" height="35" loading="lazy" decoding="async" alt="facebook" />
+              <img src="img/brands/tinder.webp" width="98" height="35" loading="lazy" decoding="async" alt="tinder" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="platform section bg-light" id="products">
+        <div class="container two-col">
+          <div class="feature-intro">
+            <h2>The ultimate platform for creating, sharing, and executing.</h2>
+            <p>
+              We are helping thousands of organizations run their business
+              strategies and achieve their ambitious results! We make big plans
+              happen.
+            </p>
+            <a class="btn btn-primary" href="#contact">Try for Free</a>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="icon-circle"><i class="fa-solid fa-cloud"></i></div>
+              <h3>Cloud Support</h3>
+              <p>Fugiat similique nobis porro cumque stinctio iusto quaerat corrupti.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon-circle"><i class="fa-solid fa-cubes"></i></div>
+              <h3>Object Oriented</h3>
+              <p>Fugiat similique nobis porro cumque stinctio iusto quaerat corrupti.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon-circle"><i class="fa-regular fa-clock"></i></div>
+              <h3>24h Service</h3>
+              <p>Fugiat similique nobis porro cumque stinctio iusto quaerat corrupti.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon-circle"><i class="fa-solid fa-gauge-high"></i></div>
+              <h3>Faster Response</h3>
+              <p>Fugiat similique nobis porro cumque stinctio iusto quaerat corrupti.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-section section" id="about">
+        <div class="container">
+          <div class="section-head narrow">
+            <h2>Built exclusively for you</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              egestas Werat viverra id et aliquet. vulputate egestas
+              sollicitudin.
+            </p>
+          </div>
+          <button class="video-thumb" type="button" aria-label="Play video">
+            <img
+              src="img/video-popup.webp"
+              width="850"
+              height="485"
+              loading="lazy"
+              decoding="async"
+              alt="video-thumnail"
+            />
+            <span><i class="fa-solid fa-play"></i></span>
+          </button>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <article class="service-block section">
+          <div class="container service-grid">
+            <div class="service-slider" data-slider>
+              <div class="slides">
+                <img class="active" src="img/services/service-1.webp" width="1110" height="677" loading="lazy" decoding="async" alt="services-image" />
+                <img src="img/services/service-2.webp" width="1110" height="672" loading="lazy" decoding="async" alt="services-image" />
+                <img src="img/services/service-3.webp" width="1110" height="672" loading="lazy" decoding="async" alt="services-image" />
+              </div>
+              <div class="slider-dots"></div>
+            </div>
+            <div class="service-copy">
+              <h2>It is the most advanced digital marketing company.</h2>
+              <p>
+                Adipiscing elit Consequat tristique eget amet, tempus eu at
+                consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel
+                consquat. consectetur adipiscing elit. Consequat tristique eget
+                amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus.
+                Ac laoreet sit vel consquat.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-block section bg-light">
+          <div class="container service-grid reverse">
+            <div class="service-slider single" data-slider>
+              <div class="slides">
+                <img class="active" src="img/services/service-2.webp" width="1110" height="672" loading="lazy" decoding="async" alt="services-image" />
+              </div>
+              <div class="slider-dots"></div>
+            </div>
+            <div class="service-copy">
+              <h2>It is a privately owned Information and cyber security company</h2>
+              <p>
+                Adipiscing elit Consequat tristique eget amet, tempus eu at
+                consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel
+                consquat. consectetur adipiscing elit. Consequat tristique eget
+                amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus.
+                Ac laoreet sit vel consquat.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-block section">
+          <div class="container service-grid">
+            <div class="service-slider" data-slider>
+              <div class="slides">
+                <img class="active" src="img/services/service-3.webp" width="1110" height="672" loading="lazy" decoding="async" alt="services-image" />
+                <img src="img/services/service-1.webp" width="1110" height="677" loading="lazy" decoding="async" alt="services-image" />
+                <img src="img/services/service-2.webp" width="1110" height="672" loading="lazy" decoding="async" alt="services-image" />
+              </div>
+              <div class="slider-dots"></div>
+            </div>
+            <div class="service-copy">
+              <h2>It's a team of experienced and skilled people with distributions</h2>
+              <p>
+                Adipiscing elit Consequat tristique eget amet, tempus eu at
+                consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel
+                consquat. consectetur adipiscing elit. Consequat tristique eget
+                amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus.
+                Ac laoreet sit vel consquat.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-block section bg-light">
+          <div class="container service-grid reverse">
+            <div class="service-slider single" data-slider>
+              <div class="slides">
+                <img class="active" src="img/services/service-1.webp" width="1110" height="677" loading="lazy" decoding="async" alt="services-image" />
+              </div>
+              <div class="slider-dots"></div>
+            </div>
+            <div class="service-copy">
+              <h2>A company standing different from others</h2>
+              <p>
+                Adipiscing elit Consequat tristique eget amet, tempus eu at
+                consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel
+                consquat. consectetur adipiscing elit. Consequat tristique eget
+                amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus.
+                Ac laoreet sit vel consquat.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="testimonials section" id="team">
+        <div class="container">
+          <div class="section-head narrow">
+            <h2>Trusted by those you trust</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              egestas Werat viverra id et aliquet. vulputate egestas
+              sollicitudin.
+            </p>
+          </div>
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <p>
+                Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam
+                porta arcu congue felis volutpat. Vitae lectudbfs dolor faucibus
+              </p>
+              <div class="person">
+                <img src="img/authors/author-1.webp" width="380" height="420" loading="lazy" decoding="async" alt="Ryder Stewart" />
+                <div>
+                  <h3>Ryder Stewart</h3>
+                  <span>Lynch, Marquardt</span>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <p>
+                Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam
+                porta arcu congue felis volutpat. Vitae lectudbfs dolor faucibus
+              </p>
+              <div class="person">
+                <img src="img/authors/author-2.webp" width="380" height="420" loading="lazy" decoding="async" alt="Ryder Stewart" />
+                <div>
+                  <h3>Ryder Stewart</h3>
+                  <span>Lynch, Marquardt</span>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <p>
+                Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam
+                porta arcu congue felis volutpat. Vitae lectudbfs dolor faucibus
+              </p>
+              <div class="person">
+                <img src="img/authors/author-3.webp" width="380" height="420" loading="lazy" decoding="async" alt="Ryder Stewart" />
+                <div>
+                  <h3>Ryder Stewart</h3>
+                  <span>Lynch, Marquardt</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="tools section bg-light" id="workflow">
+        <div class="container">
+          <div class="section-head narrow">
+            <h2>Integrate with all the tools your teams love using</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              egestas Werat viverra id et aliquet. vulputate egestas
+              sollicitudin.
+            </p>
+          </div>
+          <div class="tools-grid">
+            <span><img src="img/tools/1.webp" width="186" height="45" loading="lazy" decoding="async" alt="tools image" /></span>
+            <span><img src="img/tools/2.webp" width="186" height="45" loading="lazy" decoding="async" alt="tools image" /></span>
+            <span><img src="img/tools/3.webp" width="186" height="45" loading="lazy" decoding="async" alt="tools image" /></span>
+            <span><img src="img/tools/4.webp" width="186" height="45" loading="lazy" decoding="async" alt="tools image" /></span>
+            <span><img src="img/tools/5.webp" width="70" height="45" loading="lazy" decoding="async" alt="tools image" /></span>
+            <span><img src="img/tools/6.webp" width="148" height="45" loading="lazy" decoding="async" alt="tools image" /></span>
+            <span><img src="img/tools/8.webp" width="186" height="45" loading="lazy" decoding="async" alt="tools image" /></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta section" id="contact">
+        <div class="container cta-grid">
+          <img src="img/announcement.svg" width="1443" height="314" loading="lazy" decoding="async" alt="anoucement-image" />
+          <div>
+            <h2>Ready to get started?</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Consequat eget amtempus eu at consecttur.
+            </p>
+            <a class="btn btn-light" href="mailto:hello@example.com">Contact Us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="img/logo.png" width="360" height="77" loading="lazy" decoding="async" alt="Bigspring" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget
+            amet tempus eu at cttur
+          </p>
+          <ul class="socials" aria-label="Social links">
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://www.github.com/" target="_blank" rel="noopener noreferrer" aria-label="github"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <a href="#about">About</a>
+          <a href="#team">Team</a>
+          <a href="#workflow">How It Works</a>
+          <a href="#career">career</a>
+        </div>
+        <div>
+          <h3>Product</h3>
+          <a href="#products">CRM</a>
+          <a href="#products">Help Desk</a>
+          <a href="#products">Workplace</a>
+          <a href="#products">Analytics</a>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms &amp; Conditions</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>Copyright by your company | Theme by Themefisher</p>
+      </div>
+    </footer>
+
+    <div class="video-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Bigspring video">
+      <button class="modal-close" type="button" aria-label="Close video">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-frame">
+        <iframe
+          title="Bigspring video"
+          src=""
+          data-src="https://www.youtube.com/embed/dyZcRRWiuuw"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <button class="scroll-top" type="button" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
